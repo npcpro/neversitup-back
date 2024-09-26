@@ -1,4 +1,4 @@
-import { shufflings } from './shufflings'; // Adjust path if necessary
+import { shufflings } from './shufflings';
 
 describe('shufflings function', () => {
   it('should return ["a"] when input is "a"', () => {

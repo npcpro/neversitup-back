@@ -1,9 +1,9 @@
-/**
- * 
- * @param texts list of string [":)", ":(", ":>"]
- * @returns amount of smily face detected
- */
-export function countSmilyFace(texts: string[]) : number {
-    // TODO : Start your code here
-    throw new Error("Not implemented");
+export function countSmileys(arr) {
+    // [:;] 0
+    // [:;]? 1 not required
+    // [)D] 2
+    const validSmileys = /[:;][-~]?[)D]/;
+    return arr.filter(face => validSmileys.test(face)).length;
 }
+
+module.exports = { countSmileys };
